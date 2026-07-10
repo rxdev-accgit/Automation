@@ -2,7 +2,7 @@ from flask import Flask as FLS, jsonify as js, request
 
 app = FLS("AutomationServer.FLS")
 
-@app.route("/AutomationRequest", Methods=["POST"])
+@app.route("/AutomationRequest", methods=["POST"])
 def roblox_webhook():
     data = request.get_json()
     
